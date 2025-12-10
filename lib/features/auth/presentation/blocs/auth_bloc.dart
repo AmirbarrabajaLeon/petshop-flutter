@@ -19,7 +19,7 @@ class AuthBloc extends Bloc<AuthEvent, AuthState> {
       final user = await loginRepository.login(event.email, event.password);
       emit(AuthSuccess(user));
     } catch (e) {
-      emit(AuthFailure(e.toString()));
+      emit(AuthFailure("Usuario y/o contraseña incorrectos"));
     }
   }
 }
