@@ -40,12 +40,18 @@ class _LoginPageState extends State<LoginPage> {
             children: [
               TextField(
                 controller: _emailController,
-                decoration: const InputDecoration(labelText: 'Email'),
+                decoration: const InputDecoration(
+                  labelText: 'Email (Dont Forget the "@")',
+                  hintText: 'u202310680@upc.edu.pe',
+                ),
               ),
               const SizedBox(height: 16),
               TextField(
                 controller: _passwordController,
-                decoration: const InputDecoration(labelText: 'Password'),
+                decoration: const InputDecoration(
+                  labelText: 'Password',
+                  hintText: 'acastro',
+                ),
                 obscureText: true,
               ),
               const SizedBox(height: 24),
