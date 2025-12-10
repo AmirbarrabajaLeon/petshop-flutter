@@ -29,7 +29,7 @@ class AppDatabase {
             description TEXT,
             stock INTEGER,
             category TEXT,
-            rating REAL,
+            rating REAL
           )
         ''');
       },
