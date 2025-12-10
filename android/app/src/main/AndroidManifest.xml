@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <uses-permission android:name="android.permission.INTERNET" />
     <application
-        android:label="upc_pre_202520_1acc0238_eb_u202310680"
+        android:label="PetShop"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
