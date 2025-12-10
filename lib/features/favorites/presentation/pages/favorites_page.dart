@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:upc_pre_202520_1acc0238_eb_u202310680/features/products/presentation/blocs/products_bloc.dart';
+import 'package:upc_pre_202520_1acc0238_eb_u202310680/features/products/presentation/blocs/products_event.dart';
 import '../blocs/favorites_bloc.dart';
 import '../blocs/favorites_state.dart';
 import '../blocs/favorites_event.dart';
@@ -38,6 +40,7 @@ class FavoritesPage extends StatelessWidget {
                       context.read<FavoritesBloc>().add(
                         RemoveFavoriteEvent(product),
                       );
+                      context.read<ProductsBloc>().add(ToggleFavorite(product));
                     },
                   ),
                 );
