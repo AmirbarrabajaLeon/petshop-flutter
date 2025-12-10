@@ -1,0 +1,30 @@
+name: upc_pre_202520_1acc0238_eb_u202310680
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  dio: ^5.9.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^9.1.1
+  flutter_launcher_icons: ^0.14.4
+  http: ^1.6.0
+  path: ^1.9.1
+  sqflite: ^2.4.2
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+flutter:
+  uses-material-design: true
